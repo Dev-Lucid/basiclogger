@@ -1,8 +1,7 @@
 {
-  "name": "basiclogger",
+  "name": "dev-lucid/basiclogger",
   "type":"library",
-  "repo": "devlucid/basiclogger",
-  "description": "",
+  "description": "An extremely simple implementation of PSR-3 logging that sends all messages to error_log.",
   "authors": [
       {
           "name":     "Mike Thorn",
@@ -18,8 +17,9 @@
   "autoload": {
       "psr-4": {"Lucid\\Component\\BasicLogger\\": "/src/php"}
   },
-  "autoload-dev": {
-      "psr-4": {"Lucid\\Component\\BasicLogger\\": "/src/php"}
+  "require":{
+      "php": ">=5.3.0",
+      "psr/log": "~1.0"
   },
   "license": "MIT",
   "bin": [
